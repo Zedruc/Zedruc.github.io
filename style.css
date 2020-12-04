@@ -1,0 +1,60 @@
+body,
+html {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-color: #23272a;
+}
+
+header {
+    height: 80px;
+    background-color: #2C2F33;
+}
+
+.header-text {
+    margin: 0px;
+    position: absolute;
+    font-family: Mukta;
+    left: 47%;
+    bottom: 92%;
+    font-size: 3rem;
+}
+
+.content{
+    display: flexbox;
+    align-items: baseline;
+    position: fixed;
+    height: 70%;
+    width: 70%;
+    background-color: rgba(32, 32, 32, 0.678);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.langs{
+    margin: 2.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.github{
+    height: 65px;
+    width: 65px;
+    margin: 0.3%;
+}
+
+.header-text-github {
+    margin: 1px;
+    position: absolute;
+    font-family: Mukta;
+    left: 4%;
+    bottom: 91%;
+    font-size: 3rem;
+}
+
+.github-click :hover{
+    text-decoration: underline;
+}
