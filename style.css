@@ -18,6 +18,7 @@ header {
     left: 47%;
     bottom: 92%;
     font-size: 3rem;
+    color: whitesmoke;
 }
 
 .content{
@@ -38,6 +39,7 @@ header {
     margin: 2.5%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
+    color: whitesmoke;
 }
 
 .github{
@@ -53,6 +55,7 @@ header {
     left: 4%;
     bottom: 91%;
     font-size: 3rem;
+    color: whitesmoke;
 }
 
 .github-click :hover{
