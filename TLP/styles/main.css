@@ -1,7 +1,7 @@
 /* General styling */
 body {
   overflow-y: hidden;
-  background-image: url("../../resources/images/background-filler.jpg");
+  background-image: url("../resources/images/background-filler.jpg");
 }
 
 /* The sidebar menu */
