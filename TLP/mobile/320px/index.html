@@ -45,13 +45,16 @@
 
     <div id="discord-pullup" class="discord-pullup">
         <div id="close" class="close">
-            <img src="../../resources/svg/X-Icon.svg" alt="Close" id="close-pullup-menu" class=" close hidden
+            <img src="../../resources/svg/X-Icon.svg" alt="Close" id="close-pullup-menu" class="close hidden
                 close-pullup-menu">
         </div>
         <img src="../../resources/svg/double-right-arrows-angles.svg" alt="Show Members" class="up-arrow"
             id="up-arrow" />
-        <div id="menu" class="menu">
-
+        <div id="list-menu" class="list-menu hidden">
+            <p>About</p>
+            <p>Join</p>
+            <p>Contact</p>
+            <p>Server</p>
         </div>
     </div>
 
@@ -64,6 +67,7 @@
         });
     </script>
     <script defer src="../../js/onArrowUp.js"></script>
+    <script defer src="../../js/onMenuClose.js"></script>
 </body>
 
 </html>

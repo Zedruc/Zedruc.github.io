@@ -117,7 +117,24 @@ body {
     margin: 5px;
 }
 
-.menu {
+.list-menu {
+    position: absolute;
+    width: 50%;
+    top: -15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.list-menu p {
+    font-family: 'Mont Heavy DEMO';
+    font-size: 45px;
+}
+
+.list-menu :hover {
+    font-family: 'Mont Heavy DEMO';
+    font-size: 45px;
+    color: gray;
 }
