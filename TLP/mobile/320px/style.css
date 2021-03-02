@@ -85,7 +85,8 @@ body {
 }
 
 .up-arrow {
-    left: 48%;
+    top: 25%;
+    position: absolute;
     transform: rotate(-90deg);
     width: 20px;
 }
@@ -99,4 +100,24 @@ body {
     overflow-x: hidden;
     height: 100vh;
     transition: 1s;
+}
+
+.close {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.close-pullup-menu {
+    position: relative;
+    top: -47%;
+    left: 0;
+    width: 30px;
+    margin: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
 }
