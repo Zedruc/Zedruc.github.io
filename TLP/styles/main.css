@@ -6,59 +6,156 @@ body {
 
 /* The sidebar menu */
 .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 160px;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+/* Give p tags font */
+.sidenav p {
+  font-family: 'Mont Extralight DEMO';
+  font-weight: bold;
+}
+
+/* Set position of server icon at top of nav */
+.server-icon {
+  border-radius: 100%;
+  padding: 5px;
+  width: 90%;
+}
+
+.server-name {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+.discord-iframe {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 54%;
+}
+
+.page-background {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.page-background img {
+  filter: blur(3px);
+}
+
+.server-name {
+  font-family: 'Dancing Script Bold';
+  font-size: 50px;
+  border-bottom: 3px solid black;
+}
+
+.info {
+  z-index: 0.9;
+  width: 1000px;
+  height: 300px;
+  font-family: 'Dancing Script Bold';
+  position: absolute;
+  z-index: 1;
+  transform: translate(50%, -50%);
+  left: -200px;
+  top: 30%;
+  font-size: 60px;
+}
+
+.channels {
+  position: relative;
+  left: 10%;
+  -webkit-text-stroke: 0.5px wheat;
+}
+
+.bots {
+  -webkit-text-stroke: 0.5px wheat;
+}
+
+/* Swal alerts */
+
+.alert {
+  background-color: #2b2b2b;
+}
+
+.swal-title {
+  color: white;
+  font-family: 'Mont Extralight DEMO';
+}
+
+.swal-text {
+  color: white;
+  font-family: 'Mont Extralight DEMO';
+}
+
+@media screen and (min-width: 320px) {
+
+  /* General styling */
+  html,
+  body {
+    overflow-x: hidden;
   }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
+
+  body {
+    position: relative
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
+
+
+  /* The sidebar menu */
+  .sidenav {
+    visibility: hidden;
   }
-  
+
   /* Style page content */
   .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
-  /* Give p tags font */
-  .sidenav p {
-    font-family: 'Mont Extralight DEMO';
-    font-weight: bold;
-  }
-
-  /* Set position of server icon at top of nav */
-  .server-icon {
-    border-radius: 100%;
-    padding: 5px;
-    width: 90%;
+    width: 100%;
+    height: 100%;
   }
 
   .server-name {
     position: absolute;
-    left: 50%;
+    bottom: 0;
+    left: 0;
     z-index: 1;
   }
 
@@ -69,10 +166,10 @@ body {
     top: 54%;
   }
 
-  .page-background {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
+  .page-background img {
+    width: 100vh;
+    height: 100vh;
+
   }
 
   .page-background img {
@@ -108,7 +205,7 @@ body {
     -webkit-text-stroke: 0.5px wheat;
   }
 
-/* Swal alerts */
+  /* Swal alerts */
 
   .alert {
     background-color: #2b2b2b;
@@ -123,3 +220,4 @@ body {
     color: white;
     font-family: 'Mont Extralight DEMO';
   }
+}

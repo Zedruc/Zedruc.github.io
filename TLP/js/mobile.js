@@ -1,3 +1,3 @@
-if (screen.width < 1920) {
-    alert("Site is being made, only 1920x1080 display supported :/");
+if (screen.width <= 320) {
+    document.location.replace("/TLP/mobile/320px/index.html");
 }

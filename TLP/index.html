@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
+    <script src="./js/mobile.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon"
         href="https://cdn.discordapp.com/icons/704285475791437844/a_d0dbf5641cdacced990dbaff4aeac47f.webp?size=256">
-    <script src="./js/mobile.js"></script>
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/main.css">
     <meta charset="UTF-8">
@@ -55,6 +55,13 @@
     </main>
 
     <script>
+
+        if (screen.width < 1920) {
+            swal("Hey!", "This website is not optimized for mobile devices yet,\nconsider using a computer.", {
+                className: "alert"
+            });
+        }
+
         document.getElementById("join").addEventListener('click', () => {
             swal("Oops!", "there's no invite link :\(", {
                 className: "alert"
