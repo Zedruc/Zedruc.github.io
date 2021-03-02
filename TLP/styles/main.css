@@ -43,11 +43,13 @@ body {
     .sidenav a {font-size: 18px;}
   }
 
+  /* Give p tags font */
   .sidenav p {
     font-family: 'Mont Extralight DEMO';
     font-weight: bold;
   }
 
+  /* Set position of server icon at top of nav */
   .server-icon {
     border-radius: 100%;
     padding: 5px;
@@ -99,9 +101,25 @@ body {
   .channels {
     position: relative;
     left: 10%;
-    -webkit-text-stroke: 0.5px wheat
+    -webkit-text-stroke: 0.5px wheat;
   }
 
   .bots {
-    -webkit-text-stroke: 0.5px wheat
+    -webkit-text-stroke: 0.5px wheat;
+  }
+
+/* Swal alerts */
+
+  .alert {
+    background-color: #2b2b2b;
+  }
+
+  .swal-title {
+    color: white;
+    font-family: 'Mont Extralight DEMO';
+  }
+
+  .swal-text {
+    color: white;
+    font-family: 'Mont Extralight DEMO';
   }

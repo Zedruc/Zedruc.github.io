@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon"
+        href="https://cdn.discordapp.com/icons/704285475791437844/a_d0dbf5641cdacced990dbaff4aeac47f.webp?size=256">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +15,33 @@
 </head>
 
 <body>
+    <div class="sidenav" id="sidenav">
 
+        <!--Server icon on top-->
+        <img src="https://cdn.discordapp.com/icons/704285475791437844/a_d0dbf5641cdacced990dbaff4aeac47f.webp?size=256"
+            alt="𝓣𝓱𝓮 𝓛𝓸𝓿𝓮 𝓟𝓪𝓵𝓪𝓬𝓮" id="server-icon" class="server-icon" />
+
+        <a href="./about.html">
+            <p>About</p>
+        </a>
+        <a href="#">
+            <p id="join">Join</p>
+        </a>
+        <a href="#">
+            <p>Contact</p>
+        </a>
+        <a href="./index.html">
+            <p>Server</p>
+        </a>
+    </div>
+
+    <script>
+        document.getElementById("join").addEventListener('click', () => {
+            swal("Oops!", "there's no invitiation link :\(", {
+                className: "alert"
+            });
+        });
+    </script>
 </body>
 
 </html>

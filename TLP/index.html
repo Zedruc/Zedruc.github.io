@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon"
         href="https://cdn.discordapp.com/icons/704285475791437844/a_d0dbf5641cdacced990dbaff4aeac47f.webp?size=256">
     <script src="./js/mobile.js"></script>
@@ -24,7 +26,7 @@
             <p>About</p>
         </a>
         <a href="#">
-            <p>Join</p>
+            <p id="join">Join</p>
         </a>
         <a href="#">
             <p>Contact</p>
@@ -38,7 +40,7 @@
         <h1 id="server-name" class="server-name">The Love Palace</h1>
         <div class="info" id="info">
             <h3 id="bots" class="bots">27 bots you can use!</h3>
-            <h3 id="channels" class="channels">42 channels you can meet other in!</h3>
+            <h3 id="channels" class="channels">42 channels you can meet others in!</h3>
         </div>
 
         <div id="discord-iframe" class="discord-iframe">
@@ -51,6 +53,14 @@
             <img src="./resources/images/background.png" alt="The background couldn't load :/">
         </div>
     </main>
+
+    <script>
+        document.getElementById("join").addEventListener('click', () => {
+            swal("Oops!", "there's no invitiation link :\(", {
+                className: "alert"
+            });
+        });
+    </script>
 </body>
 
 </html>
