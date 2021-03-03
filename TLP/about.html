@@ -36,6 +36,12 @@
     </div>
 
     <script>
+        if (screen.width < 1920) {
+            swal("Hey!", "This website is not optimized for mobile devices yet,\nconsider using a computer.", {
+                className: "alert"
+            });
+        }
+
         document.getElementById("join").addEventListener('click', () => {
             swal("Oops!", "there's no invite link :\(", {
                 className: "alert"

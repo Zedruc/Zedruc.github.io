@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <script>
+        if (screen.width >= 720) {
+            document.location.replace("/TLP/");
+        }
+    </script>
     <link rel="stylesheet" href="../../styles/fonts.css">
     <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -20,11 +25,11 @@
                 src="https://cdn.discordapp.com/icons/704285475791437844/a_d0dbf5641cdacced990dbaff4aeac47f.webp?size=256"
                 alt="𝓣𝓱𝓮 𝓛𝓸𝓿𝓮 𝓟𝓪𝓵𝓪𝓬𝓮" id="server-icon" class="server-icon" /><a href="./about.html">
                 <p>About</p>
-            </a><a href="#">
+            </a><a href="javascript:void(0);">
                 <p id="join">Join</p>
-            </a><a href="#">
+            </a><a href="javascript:void(0);">
                 <p>Contact</p>
-            </a><a href="#">
+            </a><a href="javascript:void(0);">
                 <p>Server</p>
             </a>
     </div>
@@ -51,10 +56,10 @@
         <img src="../../resources/svg/double-right-arrows-angles.svg" alt="Show Members" class="up-arrow"
             id="up-arrow" />
         <div id="list-menu" class="list-menu hidden">
-            <p>About</p>
-            <p>Join</p>
-            <p>Contact</p>
-            <p>Server</p>
+            <p id="list-menu-about">About</p>
+            <p id="list-menu-join">Join</p>
+            <p id="list-menu-contact">Contact</p>
+            <p id="list-menu-server">Server</p>
         </div>
     </div>
 
@@ -68,6 +73,7 @@
     </script>
     <script defer src="../../js/onArrowUp.js"></script>
     <script defer src="../../js/onMenuClose.js"></script>
+    <script defer src="../../js/onMenuClick.js"></script>
 </body>
 
 </html>

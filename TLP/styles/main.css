@@ -62,7 +62,7 @@ body {
 
 .server-name {
   position: absolute;
-  left: 50%;
+  left: 40%;
   z-index: 1;
 }
 
@@ -89,6 +89,12 @@ body {
   border-bottom: 3px solid black;
 }
 
+.name {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .info {
   z-index: 0.9;
   width: 1000px;
@@ -98,7 +104,7 @@ body {
   z-index: 1;
   transform: translate(50%, -50%);
   left: -200px;
-  top: 30%;
+  top: 50%;
   font-size: 60px;
 }
 

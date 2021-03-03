@@ -75,7 +75,7 @@ body {
 }
 
 .discord-pullup {
-    background-color: #202225;
+    background-color: rgba(255, 255, 255, 0.767);
     position: absolute;
     bottom: 0;
     height: 40px;
@@ -111,8 +111,9 @@ body {
 
 .close-pullup-menu {
     position: relative;
-    top: -47%;
+    top: 0;
     left: 0;
+    height: 50px;
     width: 30px;
     margin: 5px;
 }
@@ -137,4 +138,18 @@ body {
     font-family: 'Mont Heavy DEMO';
     font-size: 45px;
     color: gray;
+}
+
+.alert {
+    background-color: #2b2b2b;
+}
+
+.swal-title {
+    color: white;
+    font-family: 'Mont Extralight DEMO';
+}
+
+.swal-text {
+    color: white;
+    font-family: 'Mont Extralight DEMO';
 }
