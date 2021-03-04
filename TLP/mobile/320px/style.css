@@ -1,5 +1,4 @@
 html {
-    overflow-y: hidden;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -142,6 +141,12 @@ body {
 
 .alert {
     background-color: #2b2b2b;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.alert div {
+    color: whitesmoke;
 }
 
 .swal-title {
@@ -149,7 +154,25 @@ body {
     font-family: 'Mont Extralight DEMO';
 }
 
-.swal-text {
-    color: white;
-    font-family: 'Mont Extralight DEMO';
+.container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.headline {
+    position: absolute;
+    font-family: 'Dancing Script BOLD';
+    font-size: 40px;
+    top: 0;
+}
+
+.description {
+    top: 15%;
+    left: -5%;
+    position: absolute;
+    white-space: pre-wrap;
+    font-size: 14px;
 }

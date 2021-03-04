@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-    <script src="./js/mobile.js"></script>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon"
         href="https://cdn.discordapp.com/icons/704285475791437844/a_d0dbf5641cdacced990dbaff4aeac47f.webp?size=256">
-    <link rel="stylesheet" href="./styles/fonts.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="../../styles/fonts.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,27 +15,11 @@
 </head>
 
 <body>
-    <div class="sidenav" id="sidenav">
+    <div id="container" class="container">
+        <span id="headline" class="headline">
+            <p>About the server</p>
+        </span>
 
-        <!--Server icon on top-->
-        <img src="https://cdn.discordapp.com/icons/704285475791437844/a_d0dbf5641cdacced990dbaff4aeac47f.webp?size=256"
-            alt="𝓣𝓱𝓮 𝓛𝓸𝓿𝓮 𝓟𝓪𝓵𝓪𝓬𝓮" id="server-icon" class="server-icon" />
-
-        <a href="javascript:void(0)">
-            <p>About</p>
-        </a>
-        <a href="javascript:void(0)">
-            <p id="join">Join</p>
-        </a>
-        <a href="javascript:void(0)">
-            <p id="contact">Contact</p>
-        </a>
-        <a href="./index.html">
-            <p>Server</p>
-        </a>
-    </div>
-
-    <main>
         <div id="description" class="description">
             ┌────────･｡ﾟ: ∘◦☾◦∘｡ﾟ. ────────┐
             hello! welcome to 𝓣𝓱𝓮 𝓛𝓸𝓿𝓮 𝓟𝓪𝓵𝓪𝓬𝓮 💗
@@ -64,30 +47,25 @@
             🍡 ꒱ many cool emojis
         </div>
 
-        <div id="discord-iframe" class="discord-iframe">
-            <iframe src="https://discord.com/widget?id=704285475791437844&theme=dark" width="350" height="450"
-                allowtransparency="true" frameborder="0"
-                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
 
-        <div id="page-background" class="page-background">
-            <img src="./resources/images/background.png" alt="The background couldn't load :/">
+        <div id="discord-pullup" class="discord-pullup">
+            <div id="close" class="close">
+                <img src="../../resources/svg/X-Icon.svg" alt="Close" id="close-pullup-menu" class="close hidden
+                    close-pullup-menu">
+            </div>
+            <img src="../../resources/svg/double-right-arrows-angles.svg" alt="Show Members" class="up-arrow"
+                id="up-arrow" />
+            <div id="list-menu" class="list-menu hidden">
+                <p id="list-menu-about">About</p>
+                <p id="list-menu-join">Join</p>
+                <p id="list-menu-contact">Contact</p>
+                <p id="list-menu-server">Server</p>
+            </div>
         </div>
-    </main>
-    <script>
-        if (screen.width < 1920) {
-            swal("Hey!", "This website is not optimized for mobile devices yet,\nconsider using a computer.", {
-                className: "alert"
-            });
-        }
-
-        document.getElementById("join").addEventListener('click', () => {
-            swal("Oops!", "there's no invite link :\(", {
-                className: "alert"
-            });
-        });
-    </script>
-    <script defer src="./js/contactDesktop.js"></script>
+    </div>
+    <script defer src="../../js/onArrowUp.js"></script>
+    <script defer src="../../js/onMenuClick.js"></script>
+    <script defer src="../../js/onMenuClose.js"></script>
 </body>
 
 </html>

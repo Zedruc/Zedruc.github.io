@@ -4,9 +4,9 @@ let contactButton = document.getElementById("list-menu-contact");
 let serverButton = document.getElementById("list-menu-server");
 
 aboutButton.addEventListener('click', () => {
-    swal("Hey!", "the mobile about page doesnt exist yet :(", {
-        className: "alert"
-    });
+    if (document.location.pathname === "/TLP/mobile/320px/about.html")
+        return document.getElementById("close-pullup-menu").click();
+    document.location.pathname = "/TLP/mobile/320px/about.html";
 });
 
 joinButton.addEventListener('click', () => {
@@ -16,11 +16,14 @@ joinButton.addEventListener('click', () => {
 });
 
 contactButton.addEventListener('click', () => {
-    swal("Hey!", "the contact page doesnt exist yet :(", {
-        className: "alert"
-    });
+    swal("Hey!", "To get in touch add Nofu#4100 on Discord! :)", {
+        className: 'alert'
+    })
 });
 
 serverButton.addEventListener('click', () => {
-    document.getElementById("close-pullup-menu").click();
+    if (document.location.pathname === "/TLP/mobile/320px/index.html")
+        return document.getElementById("close-pullup-menu").click();
+    else
+        document.location.pathname = "/TLP/mobile/320px/index.html"
 });
