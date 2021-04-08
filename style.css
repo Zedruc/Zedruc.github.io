@@ -3,71 +3,105 @@ html {
     overflow: hidden;
     margin: 0px;
     padding: 0px;
-    background-color: #23272a;
+    background-color: #85DBF2;
 }
 
-header {
-    height: 80px;
-    background-color: #2C2F33;
-}
-
-.header-text {
-    margin: 0px;
-    position: absolute;
-    font-family: Mukta;
-    left: 47%;
-    bottom: 92%;
-    font-size: 3rem;
-    color: whitesmoke;
-}
-
-.content{
-    display: flexbox;
-    align-items: baseline;
+.title {
     position: fixed;
-    height: 70%;
-    width: 70%;
-    background-color: rgba(32, 32, 32, 0.678);
+    width: 100%;
+    height: 100px;
+    font-size: 42px;
+
+    font-family: 'Mont';
+    font-weight: 800;
+    font-size: 48px;
+
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(4px);
+    position: fixed;
+    z-index: 1;
+}
+
+.about-me {
+    position: absolute;
+    transform: translate(-50%, 50%);
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-style: solid;
-    border-radius: 25px;
+    top: 10px;
+    width: 400px;
+    height: 350px;
+
+    z-index: 98;
+    text-align: center;
 }
 
-.langs{
-    margin: 2.5%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    color: whitesmoke;
+.about-me-title {
+    position: relative;
+    top: 0;
+    z-index: 99;
+    color: #000000;
+    font-family: 'Mont';
+    font-weight: 800;
+    font-size: 32px;
 }
 
-.header-text-christmastime{
-    margin: 0px;
+.about-me-paragraph {
+    position: relative;
+    top: 0;
+    z-index: 99;
+    color: #000000;
+    font-family: 'Mont';
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.my-projects {
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    height: 400px;
+    width: 100%;
+}
+
+.header {
+    z-index: 100;
+    color: #000000;
+    font-family: 'Mont';
+    font-weight: 800;
+    font-size: 48px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.mingo {
+    background-color: rgba(255, 255, 255, .7);
+    height: 250px;
+    width: 250px;
+    border-radius: 10%;
+    margin-left: 50px;
+}
+
+.mingo-icon {
+    width: 100%;
+}
+
+.info {
     position: absolute;
-    font-family: Mukta;
-    left: 45%;
-    bottom: 91.3%;
-    font-size: 1.2rem;
-    color: whitesmoke;
-}
-
-.github{
-    height: 65px;
-    width: 65px;
-    margin: 0.3%;
-}
-
-.header-text-github {
-    margin: 1px;
-    position: absolute;
-    font-family: Mukta;
-    left: 4%;
-    bottom: 91.5%;
-    font-size: 3rem;
-    color: whitesmoke;
-}
-
-.github-click :hover{
-    text-decoration: underline;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    margin-left: 260px;
+    bottom: 20px;
 }

@@ -6,7 +6,12 @@ let serverButton = document.getElementById("list-menu-server");
 aboutButton.addEventListener('click', () => {
     if (document.location.pathname === "/TLP/mobile/320px/about.html")
         return document.getElementById("close-pullup-menu").click();
-    document.location.pathname = "/TLP/mobile/320px/about.html";
+
+    if (document.location.pathname.indexOf("720px") != -1)
+        return document.location.pathname = "/TLP/mobile/720px/about.html";
+
+    if (document.location.pathname.indexOf("320px") != -1)
+        document.location.pathname = "/TLP/mobile/320px/about.html";
 });
 
 joinButton.addEventListener('click', () => {
@@ -22,7 +27,7 @@ contactButton.addEventListener('click', () => {
 });
 
 serverButton.addEventListener('click', () => {
-    if (document.location.pathname === "/TLP/mobile/320px/index.html")
+    if (document.location.pathname === "/TLP/mobile/320px/index.html" || document.location.pathname === "/TLP/mobile/720px/index.html")
         return document.getElementById("close-pullup-menu").click();
     else
         document.location.pathname = "/TLP/mobile/320px/index.html"

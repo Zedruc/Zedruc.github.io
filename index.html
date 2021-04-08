@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
-    </style>
+    <link rel="stylesheet" href="./TLP/styles/fonts.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +11,29 @@
 </head>
 
 <body>
-    <header>
-        <span class="header">
-            <h2 class="header-text">Zedruc</h2>
-            <span id="github" class="github-click">
-                <img src="/github-logo.svg" alt="Git Hub Powered" class="github">
-                <h3 class="header-text-github">Website</h3>
-            </span>
-        </span>
-    </header>
-
-    <div class="content">
-        <h2 class="langs">- Main Language</h2>
-        <h3 class="langs">--- JavaScript (Node.js)</h3>
-        <br>
-        <h2 class="langs">- Projects </h2>
-        <h3 class="langs">--- Nofu Bot (Discord.js) </h3>
-        <h3 class="langs">--- Mingo (S e c r e t) </h3>
+    <div class="title">
+        <p>Zedruc</p>
     </div>
-    <script src="./libs/aio.js"></script>
+    <div class="about-me" id="about-me">
+        <p class="about-me-title">About Me</p>
+        <p class="about-me-paragraph">
+            My name is Markus, I'm from Germany and I love to code!
+            Mainly I use JavaScript to code all my projects with
+            Node.js
+        </p>
+    </div>
+    <div class="my-projects">
+        <p class="header">Current Project</p>
+        <div class="mingo">
+            <img src="./images/Iconx1024.png" alt="Mingo Icon" class="mingo-icon">
+            <p class="info">Mingo is a free music app. It has some specialities, Mingo can be used 100% offline,
+                you can upload own audio files to a playlist
+                and if you have a internet connection you can give it a youtube url to your favorite song and it will
+                download and add it to the playlist for you
+            </p>
+        </div>
+    </div>
+    <img src="./images/background.jpg" class="img-bg" draggable="false">
     <script defer src="main.js"></script>
 </body>
 

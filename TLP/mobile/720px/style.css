@@ -1,5 +1,6 @@
 html {
     overflow-x: hidden;
+    overflow-y: hidden;
     margin: 0;
     padding: 0;
 }
@@ -19,14 +20,17 @@ body {
 .server-name {
     font-family: 'Dancing Script Bold';
     position: absolute;
-    left: 20%;
+    text-align: center;
+    left: 30%;
     top: 0;
     border-bottom: 3px solid black;
+    font-size: 60px;
 }
 
 .info {
     position: absolute;
-    top: 20%;
+    top: 30%;
+    left: 18%;
 }
 
 .bots {
@@ -34,7 +38,7 @@ body {
     left: 0;
     margin: 4px;
     font-family: 'Dancing Script Bold';
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .channels {
@@ -43,7 +47,7 @@ body {
     margin: 4px;
     margin-top: 50px;
     font-family: 'Dancing Script Bold';
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .slider {
@@ -180,4 +184,10 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.discord-iframe {
+    position: absolute;
+    left: -140px;
+    bottom: -510px;
 }
