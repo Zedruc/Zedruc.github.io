@@ -1,0 +1,31 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background-color: #181a1b;
+}
+
+.flex--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.flex {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text--title {
+    font-family: Helvetica;
+    color: #fff;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.a {
+    background-color: #fff;
+}
