@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <script defer src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +11,14 @@
 
 <body>
     <div class="wrapper">
-        <h1>#r3kt</h1>
+        <h1 style="color: #fff;">#r3kt</h1>
         <video src="./r.mp4" autoplay muted></video>
     </div>
     <script>
-        var audio = new Audio('./r.mp4');
-        audio.play();
+        document.addEventListener('focus', () => {
+            var audio = new Audio('./r.mp4');
+            audio.play();
+        });
     </script>
 </body>
 
