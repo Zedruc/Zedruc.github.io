@@ -1,3 +1,4 @@
 function redirect(target) {
-    window.open(target, '_blank');
+    localStorage.setItem('last_page', window.location.pathname);
+    window.location.pathname = target;
 }

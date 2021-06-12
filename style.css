@@ -29,3 +29,15 @@ body, html {
 .a {
     background-color: #fff;
 }
+
+.flex--back {
+    font-family: 'Inter';
+    color: #fff;
+    font-weight: 500;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.flex--back:hover {
+    font-weight: 700;
+}
