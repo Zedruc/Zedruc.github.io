@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(49, 45, 45);
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+
+    background-color: rgb(34, 31, 31);
+}
+
+.header--text {
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.wrapper {
+    margin: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    clear: both;
+}
+
+.flex--aic {
+    display: flex;
+    align-items: center;
+
+    height: 200px;
+}
+
+.icon {
+    width: 100px;
+}
+
+.name {
+    font-family: 'Gotham';
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.desc {
+    text-align: center;
+    font-family: 'Gotham';
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+
+    position: fixed;
+
+    top: 50%;
+    left: calc(50% - 380px);
+}
+
+/* Buttons */
+.act-btn {
+    user-select: none;
+    position: absolute;
+    z-index: 1;
+    width: 237px;
+    height: 75px;
+    outline: none;
+    margin-left: 10px;
+    border: 3px solid #53585a;
+    transition: .4s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.act-btn-anim--background {
+    background: rgba(0, 0, 0, 0);
+}
+
+.act-btn-anim--background:hover {
+    background: /*#181A1B*/ rgb(0, 183, 255);
+    transition: .4s ease;
+}
+
+.act-btn-anim--background:active {
+    -webkit-box-shadow: 0px 0px 5px 3px rgb(0, 183, 255); 
+    box-shadow: 0px 0px 5px 3px rgb(0, 183, 255);
+    background: rgb(0, 183, 255);
+    transition: 0s;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.download {
+    font-family: 'Gotham';
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
