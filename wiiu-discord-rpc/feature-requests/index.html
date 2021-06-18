@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../../assets/fonts/gotham/stylesheet.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord WiiU RPC - Request a feature!</title>
+</head>
+
+<body>
+    <span class="center-content">
+        <span class="title">Request a feature!</span>
+        <span class="subtitle">Your request will be sent directly to the maintainer</span>
+        <ul>
+            <div class="feature-list">
+                <input type="radio" id="settings_option" name="feature_type" value="settings_option" checked>
+                <label for="settings_option">Submit settings option</label>
+            </div>
+
+            <div class="feature-list">
+                <input type="radio" id="game" name="feature_type" value="game">
+                <label for="game">Submit game</label>
+            </div>
+        </ul>
+
+        <textarea type="text" name="message" id="messageInput"></textarea>
+        <p id="label-message">Your message (Describe your idea)</p>
+
+        <button class="btn" id="send">Send</button>
+    </span>
+</body>
+
+</html>

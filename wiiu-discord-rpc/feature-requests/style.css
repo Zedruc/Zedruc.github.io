@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(49, 45, 45);
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 10px;
+}
+
+.title {
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: 500;
+    font-size: 28px;
+    margin: 4px 0 4px 0;
+}
+
+.subtitle {
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.feature-list {
+    user-select: none;
+
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#messageInput {
+    margin-top: 15px;
+    outline: none;
+}
+
+#label-message {
+    margin-top: 0;
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: 400;
+    font-size: 14px;
+}
