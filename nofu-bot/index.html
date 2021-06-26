@@ -2,26 +2,26 @@
 <html>
 
 <head>
-	<meta charset='utf-8'>
-	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	<title>Nofu Bot | Solution for Discord servers</title>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-	<script src='typed.js'></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nofu Bot | Solution for Discord servers</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='typed.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 
-	</script>
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
 
-	</script>
+    </script>
 </head>
 
 <body>
-	<div class="header">
-		<div class="header-text-container">
-			<h1 style="font-size: 45px;margin-bottom: 0;">Nofu Bot</h1>
-			<span class="header-text" id="headerText"></span>
+    <div class="header">
+        <div class="header-text-container">
+            <h1 style="font-size: 45px;margin-bottom: 0;">Nofu Bot</h1>
+            <span class="header-text" id="headerText"></span>
         </div>
     </div>
     <div class="page-content" id="pageContent">
@@ -30,7 +30,9 @@
                 <div class="feature-container" data-aos-once="true" data-aos="fade-up">
                     <div class="feature-text">
                         <h1 class="feature-header">Moderation</h1>
-                        <p class="feature-desc">Our incredible tools allow you to moderate your own server with your guidelines. And creates more fidelity in your server with more friends! Such items can be used by your moderation, by you, and anyone allowed to do it.</p>
+                        <p class="feature-desc">Our incredible tools allow you to moderate your own server with your
+                            guidelines. And creates more fidelity in your server with more friends! Such items can be
+                            used by your moderation, by you, and anyone allowed to do it.</p>
                     </div>
                     <div class="feature-image" id="banHammer">
                         <img src="media/banhammer.svg">
@@ -40,7 +42,9 @@
                 <div class="feature-container reverse" data-aos-once="true" data-aos="fade-up">
                     <div class="feature-text">
                         <h1 class="feature-header">Fun</h1>
-                        <p class="feature-desc">Stop being sad and start being entertained by the wonderful jokes the bot provides. I can also search for memes, amusing images and so much more. Start losing <strong>more</strong> of your time today.</p>
+                        <p class="feature-desc">Stop being sad and start being entertained by the wonderful jokes the
+                            bot provides. I can also search for memes, amusing images and so much more. Start losing
+                            <strong>more</strong> of your time today.</p>
                     </div>
                     <div class="feature-image reverse" id="meme">
                         <img style="border-radius: 5px;" src="media/meme.png">
@@ -50,7 +54,8 @@
                 <div class="feature-container" data-aos-once="true" data-aos="fade-up">
                     <div class="feature-text">
                         <h1 class="feature-header">Spy on your friends</h1>
-                        <p class="feature-desc">Know awesome informations about your friends, and start acting like Bames Jond®, knowing any single secret about them.</p>
+                        <p class="feature-desc">Know awesome informations about your friends, and start acting like
+                            Bames Jond®, knowing any single secret about them.</p>
                     </div>
                     <div class="feature-image" id="banHammer">
                         <img style="border-radius: 5px;" src="media/userInfo.png">
@@ -60,7 +65,8 @@
                 <div class="feature-container reverse" data-aos-once="true" data-aos="fade-up">
                     <div class="feature-text">
                         <h1 class="feature-header">Learn more</h1>
-                        <p class="feature-desc">Learn about the awesome history about your favourite songs or animes and recommend them to your best friends, with some <i>synopsis</i>.</p>
+                        <p class="feature-desc">Learn about the awesome history about your favourite songs or animes and
+                            recommend them to your best friends, with some <i>synopsis</i>.</p>
                     </div>
                     <div class="feature-image reverse" id="anime">
                         <img style="border-radius: 5px;" src="media/anime.png">
@@ -70,7 +76,8 @@
                 <div class="feature-container" data-aos-once="true" data-aos="fade-up">
                     <div class="feature-text">
                         <h1 class="feature-header">Utilities</h1>
-                        <p class="feature-desc">Instantly use utility features to convert your files, generate random passwords and show some bot information.</p>
+                        <p class="feature-desc">Instantly use utility features to generate random passwords and show
+                            some bot information.</p>
                     </div>
                     <div class="feature-image" id="stats">
                         <img style="border-radius: 5px;" src="media/stats.png">
@@ -83,7 +90,9 @@
     <div class="page-content" id="install">
         <div class="page-content-section">
             <h1 class="page-content-header" style="color: white;">Ready to make the step?</h1>
-            <a id="installButton" target="_blank" href="https://discord.com/oauth2/authorize?client_id=760905298990202901&scope=bot&permissions=8">Add to your server</a>
+            <a id="installButton" target="_blank"
+                href="https://discord.com/oauth2/authorize?client_id=760905298990202901&scope=bot&permissions=8">Add to
+                your server</a>
         </div>
     </div>
     <div class="page-content" id="send">
@@ -96,52 +105,53 @@
         </div>
     </div>
     <script>
-var typed = new Typed("#headerText", {
-    strings: ["The bot for moderation", "The bot for content creators", "The bot for teachers", "The bot for fun people", "The bot for Discord"],
-    typeSpeed: 50,
-    backSpeed: 20,
-    loop: false,
-    showCursor: false,
-    onComplete:
-        () => {
-            if (localStorage["animation"] == null || localStorage["animation"] == undefined) {
-                var hash = "#pageContent";
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 400, function () {
-                    document.body.style.overflowY = "scroll";
-                });
-                localStorage["animation"] = "complete";
+        var typed = new Typed("#headerText", {
+            strings: ["The bot for moderation", "The bot for content creators", "The bot for teachers", "The bot for fun people", "The bot for Discord"],
+            typeSpeed: 50,
+            backSpeed: 20,
+            loop: false,
+            showCursor: false,
+            onComplete:
+                () => {
+                    if (localStorage["animation"] == null || localStorage["animation"] == undefined) {
+                        var hash = "#pageContent";
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 400, function () {
+                            document.body.style.overflowY = "scroll";
+                        });
+                        localStorage["animation"] = "complete";
+                    }
+                }
+        });
+        AOS.init();
+        if (localStorage["animation"] != null || localStorage["animation"] != undefined) document.body.style.overflowY = "scroll";
+
+        function sendMessage() {
+            let message = document.getElementById("messageInput").value;
+            if (message.trim() == "") return;
+            document.getElementById("messageInput").value = "";
+
+            var request = new XMLHttpRequest();
+            request.open("POST", "https://discord.com/api/webhooks/770348143891972106/wIj1emBcoHPqT_1H5h_Jeja2nZzT7toojpQhqXKZCU3bBuj5pLlYqgEXGgks_EmQKut7");
+
+            request.setRequestHeader('Content-type', 'application/json');
+            var params = {
+                "embeds": [
+                    {
+                        "title": "Another message from the website!",
+                        url: window.location.href,
+                        "description": message,
+                        "footer": {
+                            "text": `Website redesigned by Cazeip`
+                        },
+                        "timestamp": (new Date()).toISOString()
+                    }
+                ]
             }
-        }
-});
-AOS.init();
-if (localStorage["animation"] != null || localStorage["animation"] != undefined) document.body.style.overflowY = "scroll";
-
-function sendMessage() {
-    let message = document.getElementById("messageInput").value;
-    if (message.trim() == "") return;
-    document.getElementById("messageInput").value = "";
-
-    var request = new XMLHttpRequest();
-    request.open("POST", "https://discord.com/api/webhooks/770348143891972106/wIj1emBcoHPqT_1H5h_Jeja2nZzT7toojpQhqXKZCU3bBuj5pLlYqgEXGgks_EmQKut7");
-
-    request.setRequestHeader('Content-type', 'application/json');
-    var params = {
-        "embeds": [
-            {
-                "title": "Another message from the website!",
-                url: window.location.href,
-                "description": message,
-                "footer": {
-                    "text": `Website redesigned by Cazeip`
-                },
-                "timestamp": (new Date()).toISOString()
-            }
-        ]
-    }
-    request.send(JSON.stringify(params))
-};
+            request.send(JSON.stringify(params))
+        };
     </script>
 </body>
+
 </html>
